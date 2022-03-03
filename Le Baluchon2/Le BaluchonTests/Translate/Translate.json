@@ -1,0 +1,63 @@
+{
+    "responseData": {
+        "translatedText": "Translate your text here!",
+        "match": 0.85
+    },
+    "quotaFinished": false,
+    "mtLangSupported": null,
+    "responseDetails": "",
+    "responseStatus": 200,
+    "responderId": "228",
+    "exception_code": null,
+    "matches": [
+        {
+            "id": 0,
+            "segment": "Traduis ton texte ici!",
+            "translation": "Translate your text here!",
+            "source": "fr-CA",
+            "target": "en-GB",
+            "quality": 70,
+            "reference": "Machine Translation provided by Google, Microsoft, Worldlingo or MyMemory customized engine.",
+            "usage-count": 1,
+            "subject": false,
+            "created-by": "MT!",
+            "last-updated-by": "MT!",
+            "create-date": "2022-02-28 14:18:59",
+            "last-update-date": "2022-02-28 14:18:59",
+            "match": 0.85,
+            "model": "neural"
+        },
+        {
+            "id": "767168125",
+            "segment": "Texte ici",
+            "translation": "Text here",
+            "source": "fr-CA",
+            "target": "en-GB",
+            "quality": "74",
+            "reference": null,
+            "usage-count": 1,
+            "subject": "All",
+            "created-by": "MateCat",
+            "last-updated-by": "MateCat",
+            "create-date": "2020-07-05 18:05:41",
+            "last-update-date": "2020-07-05 18:05:41",
+            "match": 0.64
+        },
+        {
+            "id": "653253513",
+            "segment": "ton texte",
+            "translation": "your text",
+            "source": "fr-FR",
+            "target": "en-GB",
+            "quality": "74",
+            "reference": null,
+            "usage-count": 1,
+            "subject": "All",
+            "created-by": "MateCat",
+            "last-updated-by": "MateCat",
+            "create-date": "2018-06-19 07:04:02",
+            "last-update-date": "2018-06-19 07:04:02",
+            "match": 0.63
+        }
+    ]
+}
