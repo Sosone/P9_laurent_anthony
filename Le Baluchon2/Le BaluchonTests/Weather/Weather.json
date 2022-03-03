@@ -1,0 +1,86 @@
+{
+    "cnt": 2,
+    "list": [
+        {
+            "coord": {
+                "lon": -75.4999,
+                "lat": 43.0004
+            },
+            "sys": {
+                "country": "US",
+                "timezone": -18000,
+                "sunrise": 1646048390,
+                "sunset": 1646088574
+            },
+            "weather": [
+                {
+                    "id": 801,
+                    "main": "Clouds",
+                    "description": "peu nuageux",
+                    "icon": "02d"
+                }
+            ],
+            "main": {
+                "temp": -14.44,
+                "feels_like": -20.11,
+                "temp_min": -16.2,
+                "temp_max": -11.92,
+                "pressure": 1026,
+                "humidity": 75
+            },
+            "visibility": 10000,
+            "wind": {
+                "speed": 2.49,
+                "deg": 326
+            },
+            "clouds": {
+                "all": 14
+            },
+            "dt": 1646053760,
+            "id": 5128638,
+            "name": "New York"
+        },
+        {
+            "coord": {
+                "lon": 1.9167,
+                "lat": 48.5833
+            },
+            "sys": {
+                "country": "FR",
+                "timezone": 3600,
+                "sunrise": 1646030193,
+                "sunset": 1646069616
+            },
+            "weather": [
+                {
+                    "id": 802,
+                    "main": "Clouds",
+                    "description": "partiellement nuageux",
+                    "icon": "03d"
+                }
+            ],
+            "main": {
+                "temp": 10.55,
+                "feels_like": 8.89,
+                "temp_min": 8.88,
+                "temp_max": 11.68,
+                "pressure": 1027,
+                "sea_level": 1027,
+                "grnd_level": 1007,
+                "humidity": 47
+            },
+            "visibility": 10000,
+            "wind": {
+                "speed": 2.26,
+                "deg": 152
+            },
+            "clouds": {
+                "all": 31
+            },
+            "dt": 1646053587,
+            "id": 2984512,
+            "name": "Arrondissement de Rambouillet"
+        }
+    ]
+}
+
