@@ -50,7 +50,7 @@ class ExchangeViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         //GETTING DATA
         self.service.delegate = self
-//        self.service.updateRates(base: "EUR", callback : { result  in  })
+        self.service.updateRates(base: "EUR")
     }
        
     override func didReceiveMemoryWarning() {
