@@ -64,9 +64,6 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="options"/>
-                                <connections>
-                                    <segue destination="Qw5-OL-HCV" kind="show" id="2db-YF-CYO"/>
-                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="C6Q-G5-1zw" userLabel="TextView">
                                 <rect key="frame" x="20" y="183" width="374" height="289"/>
@@ -115,35 +112,6 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="392.75362318840581" y="470.75892857142856"/>
-        </scene>
-        <!--Options View Controller-->
-        <scene sceneID="6sw-eo-D25">
-            <objects>
-                <viewController id="Qw5-OL-HCV" customClass="OptionsViewController" customModule="Le_Baluchon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="27x-DM-1hP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Options" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3S-dg-0Rk">
-                                <rect key="frame" x="20" y="88" width="374" height="33"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                                <color key="textColor" red="0.34117650989999998" green="0.68627452850000004" blue="0.78039217000000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="s4I-Ht-9S4"/>
-                        <color key="backgroundColor" systemColor="systemGray5Color"/>
-                        <constraints>
-                            <constraint firstItem="s4I-Ht-9S4" firstAttribute="trailing" secondItem="o3S-dg-0Rk" secondAttribute="trailing" constant="20" id="5cH-jS-Llw"/>
-                            <constraint firstItem="o3S-dg-0Rk" firstAttribute="top" secondItem="s4I-Ht-9S4" secondAttribute="top" id="X0w-yl-9R1"/>
-                            <constraint firstItem="o3S-dg-0Rk" firstAttribute="leading" secondItem="s4I-Ht-9S4" secondAttribute="leading" constant="20" id="hJk-Wx-9WY"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="HTc-rz-uwT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="abQ-Lm-hsV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1502.8985507246377" y="470.75892857142856"/>
         </scene>
         <!--Weather-->
         <scene sceneID="RSY-fu-p3A">
@@ -395,9 +363,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
