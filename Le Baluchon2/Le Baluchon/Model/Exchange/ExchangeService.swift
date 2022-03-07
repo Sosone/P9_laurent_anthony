@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ExchangeServiceDelegate: class
+protocol ExchangeServiceDelegate: AnyObject
 {
     func ratesUpdated(result: [Currency])
 }
