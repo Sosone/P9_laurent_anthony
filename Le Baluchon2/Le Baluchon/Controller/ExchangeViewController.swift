@@ -8,17 +8,21 @@
 import UIKit
 
 
-class ExchangeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, ExchangeServiceDelegate {
-  
-    private let service = ExchangeService()
-    
-    var currencies = [Currency]()
+class ExchangeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    var currencies: [Currency] = []
     var activeCurrency:Double = 0;
     
     //OBJECTS
     @IBOutlet weak var input: UITextField!
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var output: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //GETTING DATA
+        showExchange()
+    }
         
     //CREATING PICKER VIEW
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -45,29 +49,40 @@ class ExchangeViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
       }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        //GETTING DATA
-        self.service.delegate = self
-        self.service.updateRates(base: "EUR")
-    }
-       
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         input.resignFirstResponder()
     }
     
     // MARK: ExchangeServiceDelegate
-    func ratesUpdated(result: [Currency])
-    {
-        self.currencies = result
-        DispatchQueue.main.async {
-            self.pickerView.reloadAllComponents()
+
+    private func update(currencies: [Currency]) {
+        self.currencies = currencies
+        pickerView.reloadAllComponents()
+        
+    }
+    
+    func showExchange() {
+        ExchangeService.shared.getExchange { (succes, currencies) in
+            DispatchQueue.main.async {
+                if succes {
+                    self.update(currencies: currencies)
+
+                } else {
+                    self.presentAlert()
+                }
+            }
         }
     }
+    
+    private func presentAlert() {
+        let alertVC = UIAlertController(title: "Error", message: "API data donwload failed", preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        present(alertVC, animated: true, completion: nil)
+    }
 }
+
+    
+   
+
    
