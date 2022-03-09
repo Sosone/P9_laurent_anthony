@@ -32,7 +32,7 @@
 		9287D59327BC0B73008626EB /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9287D59227BC0B73008626EB /* Currency.swift */; };
 		928AC50A27CCDE7F0008D9A3 /* Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AC50927CCDE7F0008D9A3 /* Translate.swift */; };
 		928AC52B27CD01080008D9A3 /* ExchangeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AC52A27CD01080008D9A3 /* ExchangeTestCase.swift */; };
-		928AC53027CD020B0008D9A3 /* Exchange.json in Resources */ = {isa = PBXBuildFile; fileRef = 928AC52F27CD020B0008D9A3 /* Exchange.json */; };
+		928AC53027CD020B0008D9A3 /* Currency.json in Resources */ = {isa = PBXBuildFile; fileRef = 928AC52F27CD020B0008D9A3 /* Currency.json */; };
 		928AC53227CD025C0008D9A3 /* FakeExchangeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AC53127CD025C0008D9A3 /* FakeExchangeResponseData.swift */; };
 		928AC53727CD03040008D9A3 /* Translate.json in Resources */ = {isa = PBXBuildFile; fileRef = 928AC53627CD03040008D9A3 /* Translate.json */; };
 		928AC53927CD03250008D9A3 /* Weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 928AC53827CD03250008D9A3 /* Weather.json */; };
@@ -54,20 +54,6 @@
 			remoteInfo = "Le Baluchon";
 		};
 		924C5BA02796B35300EB7602 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 924C5B772796B35200EB7602 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 924C5B7E2796B35200EB7602;
-			remoteInfo = "Le Baluchon";
-		};
-		928AC51527CCFFE70008D9A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 924C5B772796B35200EB7602 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 924C5B7E2796B35200EB7602;
-			remoteInfo = "Le Baluchon";
-		};
-		928AC52227CD00610008D9A3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 924C5B772796B35200EB7602 /* Project object */;
 			proxyType = 1;
@@ -105,10 +91,8 @@
 		9287C3EA27B2B8B3008277C8 /* FixerRatesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixerRatesResponse.swift; sourceTree = "<group>"; };
 		9287D59227BC0B73008626EB /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		928AC50927CCDE7F0008D9A3 /* Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translate.swift; sourceTree = "<group>"; };
-		928AC51127CCFFE70008D9A3 /* ExchangeServiceTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeServiceTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		928AC51E27CD00600008D9A3 /* ExchangeServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		928AC52A27CD01080008D9A3 /* ExchangeTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeTestCase.swift; sourceTree = "<group>"; };
-		928AC52F27CD020B0008D9A3 /* Exchange.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Exchange.json; sourceTree = "<group>"; };
+		928AC52F27CD020B0008D9A3 /* Currency.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Currency.json; sourceTree = "<group>"; };
 		928AC53127CD025C0008D9A3 /* FakeExchangeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeExchangeResponseData.swift; sourceTree = "<group>"; };
 		928AC53627CD03040008D9A3 /* Translate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Translate.json; sourceTree = "<group>"; };
 		928AC53827CD03250008D9A3 /* Weather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Weather.json; sourceTree = "<group>"; };
@@ -143,20 +127,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		928AC50E27CCFFE70008D9A3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		928AC51B27CD00600008D9A3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -176,8 +146,6 @@
 				924C5B7F2796B35200EB7602 /* Le Baluchon.app */,
 				924C5B952796B35300EB7602 /* Le BaluchonTests.xctest */,
 				924C5B9F2796B35300EB7602 /* Le BaluchonUITests.xctest */,
-				928AC51127CCFFE70008D9A3 /* ExchangeServiceTest.xctest */,
-				928AC51E27CD00600008D9A3 /* ExchangeServiceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,8 +184,8 @@
 		924C5BB22796B36B00EB7602 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9287C3E327B29BC3008277C8 /* Translate */,
 				9269960527A984F2002F10A5 /* Weather */,
+				9287C3E327B29BC3008277C8 /* Translate */,
 				92A2D4FB27A9355800547F7C /* Exchange */,
 			);
 			path = Model;
@@ -293,7 +261,7 @@
 			children = (
 				928AC53127CD025C0008D9A3 /* FakeExchangeResponseData.swift */,
 				928AC52A27CD01080008D9A3 /* ExchangeTestCase.swift */,
-				928AC52F27CD020B0008D9A3 /* Exchange.json */,
+				928AC52F27CD020B0008D9A3 /* Currency.json */,
 			);
 			path = Exchange;
 			sourceTree = "<group>";
@@ -384,42 +352,6 @@
 			productReference = 924C5B9F2796B35300EB7602 /* Le BaluchonUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		928AC51027CCFFE70008D9A3 /* ExchangeServiceTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 928AC51927CCFFE70008D9A3 /* Build configuration list for PBXNativeTarget "ExchangeServiceTest" */;
-			buildPhases = (
-				928AC50D27CCFFE70008D9A3 /* Sources */,
-				928AC50E27CCFFE70008D9A3 /* Frameworks */,
-				928AC50F27CCFFE70008D9A3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				928AC51627CCFFE70008D9A3 /* PBXTargetDependency */,
-			);
-			name = ExchangeServiceTest;
-			productName = ExchangeServiceTest;
-			productReference = 928AC51127CCFFE70008D9A3 /* ExchangeServiceTest.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		928AC51D27CD00600008D9A3 /* ExchangeServiceTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 928AC52427CD00610008D9A3 /* Build configuration list for PBXNativeTarget "ExchangeServiceTests" */;
-			buildPhases = (
-				928AC51A27CD00600008D9A3 /* Sources */,
-				928AC51B27CD00600008D9A3 /* Frameworks */,
-				928AC51C27CD00600008D9A3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				928AC52327CD00610008D9A3 /* PBXTargetDependency */,
-			);
-			name = ExchangeServiceTests;
-			productName = ExchangeServiceTests;
-			productReference = 928AC51E27CD00600008D9A3 /* ExchangeServiceTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -441,15 +373,6 @@
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 924C5B7E2796B35200EB7602;
 					};
-					928AC51027CCFFE70008D9A3 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 924C5B7E2796B35200EB7602;
-					};
-					928AC51D27CD00600008D9A3 = {
-						CreatedOnToolsVersion = 13.0;
-						LastSwiftMigration = 1300;
-						TestTargetID = 924C5B7E2796B35200EB7602;
-					};
 				};
 			};
 			buildConfigurationList = 924C5B7A2796B35200EB7602 /* Build configuration list for PBXProject "Le Baluchon" */;
@@ -468,8 +391,6 @@
 				924C5B7E2796B35200EB7602 /* Le Baluchon */,
 				924C5B942796B35300EB7602 /* Le BaluchonTests */,
 				924C5B9E2796B35300EB7602 /* Le BaluchonUITests */,
-				928AC51027CCFFE70008D9A3 /* ExchangeServiceTest */,
-				928AC51D27CD00600008D9A3 /* ExchangeServiceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -497,25 +418,11 @@
 			files = (
 				928AC53727CD03040008D9A3 /* Translate.json in Resources */,
 				928AC53927CD03250008D9A3 /* Weather.json in Resources */,
-				928AC53027CD020B0008D9A3 /* Exchange.json in Resources */,
+				928AC53027CD020B0008D9A3 /* Currency.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		924C5B9D2796B35300EB7602 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		928AC50F27CCFFE70008D9A3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		928AC51C27CD00600008D9A3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -570,20 +477,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		928AC50D27CCFFE70008D9A3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		928AC51A27CD00600008D9A3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -596,16 +489,6 @@
 			isa = PBXTargetDependency;
 			target = 924C5B7E2796B35200EB7602 /* Le Baluchon */;
 			targetProxy = 924C5BA02796B35300EB7602 /* PBXContainerItemProxy */;
-		};
-		928AC51627CCFFE70008D9A3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 924C5B7E2796B35200EB7602 /* Le Baluchon */;
-			targetProxy = 928AC51527CCFFE70008D9A3 /* PBXContainerItemProxy */;
-		};
-		928AC52327CD00610008D9A3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 924C5B7E2796B35200EB7602 /* Le Baluchon */;
-			targetProxy = 928AC52227CD00610008D9A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -899,103 +782,6 @@
 			};
 			name = Release;
 		};
-		928AC51727CCFFE70008D9A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZK85DCR84C;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Sosonevsthemachine.ExchangeServiceTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Le Baluchon.app/Le Baluchon";
-			};
-			name = Debug;
-		};
-		928AC51827CCFFE70008D9A3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZK85DCR84C;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Sosonevsthemachine.ExchangeServiceTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Le Baluchon.app/Le Baluchon";
-			};
-			name = Release;
-		};
-		928AC52527CD00610008D9A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZK85DCR84C;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Sosonevsthemachine.ExchangeServiceTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "ExchangeServiceTests/ExchangeServiceTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Le Baluchon.app/Le Baluchon";
-			};
-			name = Debug;
-		};
-		928AC52627CD00610008D9A3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZK85DCR84C;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Sosonevsthemachine.ExchangeServiceTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "ExchangeServiceTests/ExchangeServiceTests-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Le Baluchon.app/Le Baluchon";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1031,24 +817,6 @@
 			buildConfigurations = (
 				924C5BB02796B35300EB7602 /* Debug */,
 				924C5BB12796B35300EB7602 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		928AC51927CCFFE70008D9A3 /* Build configuration list for PBXNativeTarget "ExchangeServiceTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				928AC51727CCFFE70008D9A3 /* Debug */,
-				928AC51827CCFFE70008D9A3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		928AC52427CD00610008D9A3 /* Build configuration list for PBXNativeTarget "ExchangeServiceTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				928AC52527CD00610008D9A3 /* Debug */,
-				928AC52627CD00610008D9A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
