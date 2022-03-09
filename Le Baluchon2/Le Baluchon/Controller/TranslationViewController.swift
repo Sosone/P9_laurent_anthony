@@ -52,11 +52,3 @@ class TranslationViewController: UIViewController {
         present(alertVC, animated: true, completion: nil)
     }
 }
-
-
-
-    
-   
-
-        
-    
