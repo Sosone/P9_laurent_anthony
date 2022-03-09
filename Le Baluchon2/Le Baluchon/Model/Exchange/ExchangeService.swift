@@ -7,38 +7,46 @@
 
 import Foundation
 
-protocol ExchangeServiceDelegate: AnyObject
-{
-    func ratesUpdated(result: [Currency])
-}
-
 class ExchangeService {
     
-    weak var delegate: ExchangeServiceDelegate?
+    static var shared = ExchangeService()
     
-    func updateRates(base: String) {
-       
-        let url = URL(string: "http://data.fixer.io/api/latest?access_key=526d3e48bd3fa11ca6029c1a5d1682dd&base=\(base)")
-        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            if error != nil
-            {
-                print("ERROR")
+    private init() {}
+    
+    
+    private let exchangeUrl = URL(string: "http://data.fixer.io/api/latest?access_key=526d3e48bd3fa11ca6029c1a5d1682dd&base=EUR")!
+    
+    private var exchangeSession = URLSession(configuration: .default)
+
+    init(exchangeSession: URLSession) {
+        self.exchangeSession = exchangeSession
+    }
+    
+    private var task: URLSessionDataTask?
+    
+    func getExchange(callback: @escaping (Bool, [Currency]) ->Void) {
+        
+        task = exchangeSession.dataTask(with: exchangeUrl) { (data, response, error) in
+            guard let data = data
+                    , error == nil
+                    , let response = response as? HTTPURLResponse
+                    , response.statusCode == 200
+                    , let exchangeResponse = try? JSONDecoder().decode(FixerRatesResponse.self, from: data)
+            else {
+                callback(false, [])
+                return
             }
-            else if let content = data
-                , let response = try? JSONDecoder().decode(FixerRatesResponse.self, from: content)
-            {
-                var currencies = [Currency]()
-                response.rates.forEach { key, value in
-                    currencies.append(Currency(name: key, rate: value))
-                }
-                self.delegate?.ratesUpdated(result: currencies)
+            
+            var currencies = [Currency]()
+            exchangeResponse.rates.forEach { key, value in
+                currencies.append(Currency(name: key, rate: value))
             }
-            else
-            {
-                    print("ANOTHER ERROR")
-            }
+            callback(true, currencies)
+        
+          
         }
-        task.resume()
+        self.task?.resume()
     }
 }
+
 
