@@ -11,7 +11,7 @@ class FakeExchangeResponseData {
     
     static var exchangeCorrectData : Data? {
         let bundle = Bundle(for: FakeExchangeResponseData.self)
-        let url = bundle.url(forResource: "Exchange", withExtension: "json")
+        let url = bundle.url(forResource: "Currency", withExtension: "json")
         return try! Data(contentsOf: url!)
     }
     
