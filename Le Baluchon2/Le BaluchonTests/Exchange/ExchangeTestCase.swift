@@ -20,7 +20,7 @@ class ExchangeTestCase: XCTestCase {
             
             
             XCTAssertFalse(success)
-            XCTAssertNotNil(Currency)
+            XCTAssertEqual(Currency.count, 0)
             expectation.fulfill()
         }
         
@@ -37,7 +37,7 @@ class ExchangeTestCase: XCTestCase {
         exchangeService.getExchange { (success, Currency) in
             // Then
             XCTAssertFalse(success)
-            XCTAssertNotNil(Currency)
+            XCTAssertEqual(Currency.count, 0)
             expectation.fulfill()
         }
 
@@ -54,7 +54,7 @@ class ExchangeTestCase: XCTestCase {
         exchangeService.getExchange { (success, Currency) in
             // Then
             XCTAssertFalse(success)
-            XCTAssertNotNil(Currency)
+            XCTAssertEqual(Currency.count, 0)
             expectation.fulfill()
         }
 
@@ -71,7 +71,7 @@ class ExchangeTestCase: XCTestCase {
         exchangeService.getExchange { (success, Currency) in
             // Then
             XCTAssertFalse(success)
-            XCTAssertNotNil(Currency)
+            XCTAssertEqual(Currency.count, 0)
             expectation.fulfill()
         }
 
@@ -87,13 +87,10 @@ class ExchangeTestCase: XCTestCase {
         let expectation = XCTestExpectation(description: "Wait for queue change.")
         exchangeService.getExchange { (success, Currency) in
             // Then
-            let name = "AED"
-            let rate = 4.115416
+            let numberOfCurrency = 168
 
             XCTAssertTrue(success)
-            XCTAssertNotNil(Currency)
-//            XCTAssertEqual(name, Currency[0].name)
-//            XCTAssertEqual(rate, Currency[0].rate)
+            XCTAssertEqual(numberOfCurrency, Currency.count)
 
             expectation.fulfill()
         }
